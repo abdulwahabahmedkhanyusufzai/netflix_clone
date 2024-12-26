@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)), url("/public/hero.png");
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+footer {
+    max-width: 90vw;
+    padding: 75px 0;
+}
+
+.footer-item{
+    align-items: center;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
